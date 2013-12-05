@@ -1,0 +1,1 @@
+<div class="short_article_f"><a href="<?=$url?>" class="more_link"><?=(isset($title)) ? $title : 'Подробнее'?></a></div>
