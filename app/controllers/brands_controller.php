@@ -1,6 +1,6 @@
 <?
 class BrandsController extends SiteController {
-	const PER_PAGE = 5;
+	const PER_PAGE = 10;
 
 	var $components = array('articles.PCArticle', 'grid.PCGrid');
 	var $helpers = array('core.PHA', 'Time', 'core.PHTime', 'articles.HtmlArticle');

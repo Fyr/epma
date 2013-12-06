@@ -254,7 +254,7 @@ font-weight: bold;font-style: normal;margin-bottom: 8px;}
 .side_navi_ul{padding: 0;margin: 0;list-style-type: none;}
 .side_navi_ul>li{border-bottom: 3px solid #d7d7d7;}
 .side_lvl_1_n{text-transform: uppercase;font-size: 14px;font-weight: bold;}
-.side_lvl_1_n a{text-decoration: none;padding: 15px 20px 15px 20px;line-height: 20px;position: relative;display: block;color: #4f4f4f;background: #fff;}
+.side_lvl_1_n a{text-decoration: none;padding: 5px 20px;line-height: 20px;position: relative;display: block;color: #4f4f4f;background: #fff;}
 .side_lvl_1_n a:hover{background: #fc7d19;color: #fff;}
 .side_navi_ul ul{padding: 0;margin: 0;list-style-type: none;background: #f5f3f3;border-top: 3px solid #d7d7d7;display: none;padding-top: 10px;padding-bottom: 10px;}
 .side_navi_ul li li{}
