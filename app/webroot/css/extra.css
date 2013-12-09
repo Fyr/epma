@@ -11,6 +11,8 @@
 .error, .errNote {
 	color: #f00;
 	font-weight: bold;
+	display: block;
+
 }
 
 .pad5 td, .pad5 th {
@@ -86,4 +88,13 @@
 }
 .text {
 	margin-bottom: 20px;
+}
+input.cart-qty {
+	width: 30px;
+}
+.floatL {
+	float: left;
+}
+.floatR {
+	float: right;
 }

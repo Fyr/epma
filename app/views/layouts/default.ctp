@@ -12,8 +12,11 @@
 	<title><?=$pageTitle?></title>
 	<?=$this->element('seo_info', array('plugin' => 'seo', 'data' => $this->PHA->read($this->data, 'SEO')))?>
 	<?=$this->Html->css(array('sprites', 'normalize', 'main', 'extra'))?>
-	<?=$this->Html->script(array('modernizr-2.6.2.min', 'jquery-1.8.3.min', 'plugins', 'main'))?>
+	<?=$this->Html->script(array('modernizr-2.6.2.min', 'jquery-1.8.3.min', 'plugins', 'main', 'jquery.cookie', 'cart'))?>
 	<?=$scripts_for_layout?>
+<script type="text/javascript">
+var domain = '.<?=DOMAIN_NAME?>';
+</script>
 </head>
 <body>
 	<div id="page">

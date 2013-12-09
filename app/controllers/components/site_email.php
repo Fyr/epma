@@ -1,31 +1,31 @@
 <?
 class SiteEmailComponent extends EmailComponent {
-	
+
 	function send($content = null, $template = null, $layout = null) {
 		if (TEST_ENV) {
 			$this->delivery = 'debug';
 		}
 		return parent::send($content, $template, $layout);
 	}
-	
+
 	// Used to send emails to users
 	function sendTo($email, $template, $subj, $layout = 'default') {
 		$this->template = $template;
 		$this->layout = $layout;
-		
+
 		$this->to = $email;
 		if (defined('EMAIL_ADMIN_CC')) {
-			$this->bcc = array(EMAIL_ADMIN_CC);
+			$this->cc = array(EMAIL_ADMIN_CC);
 		}
 		$this->subject = $subj;
 		$this->replyTo = 'noreply@'.DOMAIN_NAME;
 		$this->from = 'info@'.DOMAIN_NAME;
 		$this->sendAs = 'html';
-		
+
 		$_return = $this->send();
-		
+
 		// parent::reset();
-		
+
 		return $_return;
 	}
 
@@ -56,7 +56,7 @@ class SiteEmailComponent extends EmailComponent {
 		file_put_contents('email.log', $fm, FILE_APPEND);
 		return true;
 	}
-	
+
 	function _render($content) {
 		$viewClass = $this->Controller->view;
 
@@ -96,6 +96,6 @@ class SiteEmailComponent extends EmailComponent {
 
 		return $msg;
 	}
-	
+
 }
 ?>

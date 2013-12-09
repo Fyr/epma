@@ -33,6 +33,7 @@
 
 											<div class="short_article_t">
 												<?=$this->element('prices', array('price' => $article['Article']['price']))?>
+												<?=$this->element('add_cart', array('article' => $article))?>
 												<p><?=$teaser?></p>
 											</div>
 											<?//=$this->element('more', array('url' => $url))?>

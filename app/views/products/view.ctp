@@ -15,6 +15,7 @@ $(document).ready(function(){
 	<div class="main_col_c_in">
 		<div class="text">
 			<?=$this->element('prices', array('price' => $aArticle['Article']['price']))?>
+			<?=$this->element('add_cart', array('article' => $aArticle))?>
 			<b><?__('Brand')?></b> : <?=$aArticle['Brand']['title']?><br />
 			<b><?__('Type')?></b> : <?=$aArticle['Category']['title']?><br />
 		</div>

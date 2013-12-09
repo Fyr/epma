@@ -7,21 +7,25 @@
 body, form, td, th, input, textarea, p, div {
 	font-size: 13px;
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
-	color: #515862; 
+	color: #515862;
 	vertical-align:top;
 }
 img {
 	border: none;
 }
+.pad5 td, .pad5 th {
+	padding: 3px 5px;
+}
 .look {
 	color: #000;
+	font-style: italic;
 }
 </style>
 </head>
 <body>
 <?=$content_for_layout?>
 <br /><br />
-Best regards, <br />
-&nbsp;&nbsp;&nbsp;Administrator of <a href="http://<?=DOMAIN_NAME?>"><?=DOMAIN_TITLE?></a>
+С уважением, <br />
+&nbsp;&nbsp;&nbsp;Администрация <a href="http://<?=DOMAIN_NAME?>"><?=DOMAIN_TITLE?></a>
 </body>
 </html>

@@ -363,7 +363,7 @@ class AdminController extends AppController {
 		$this->set('objectType', $objectType);
 	}
 
-		function settings() {
+	function settings() {
 		if (isset($this->data)) {
 
 			$php = "<?\r\n";
@@ -383,6 +383,14 @@ class AdminController extends AppController {
 			array('caption' => __('PU_DIV', true), 'field' => 'Settings.PU_DIV', 'value' => PU_DIV)
 		);
 		$this->set('data', $data);
+	}
+
+	function utils() {
+
+	}
+
+	function removeImageCache() {
+		$this->set('stats', $this->Media->removeImageCache());
 	}
 /*
 	function update() {

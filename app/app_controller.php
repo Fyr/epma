@@ -2,7 +2,7 @@
 class SiteController extends AppController {
 	// var $uses = array('articles.Article', 'SiteArticle');
 	var $uses = array('category.Category');
-	var $aFeaturedProducts, $aEvents;
+	var $aFeaturedProducts, $aEvents, $cart;
 
 	// ---------------------
 	// Custom variables
@@ -40,6 +40,14 @@ class SiteController extends AppController {
 
 		$this->aEvents = $this->Article->getRandomRows(1, array('Article.object_type' => 'news', 'Article.featured' => 1, 'Article.published' => 1));
 		$this->set('upcomingEvent', ($this->aEvents) ? $this->aEvents[0] : false);
+
+		App::import('Vendor', 'Services_JSON', array('file' => '../plugins/core/vendors/json.php'));
+		$json = new Services_JSON();
+
+		$this->cart = (isset($_COOKIE['cart'])) ? str_replace('\"', '"', $_COOKIE['cart']) : '{}';
+		$this->cart = (array) $json->decode($this->cart);
+		$this->cart = ($this->cart) ? array_combine(array_keys($this->cart), array_values($this->cart)) : array();
+		$this->set('aCartQty', $this->cart);
 	}
 
 	function beforeRender() {
