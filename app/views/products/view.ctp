@@ -22,8 +22,8 @@ $(document).ready(function(){
 									<ul class="main_news_list">
 <?
 	foreach($aArticle['Media'] as $media) {
-		$src = $this->PHMedia->getUrl($media['object_type'], $media['id'], '284x', $media['file'].$media['ext']);
-		$orig = $this->PHMedia->getUrl($media['object_type'], $media['id'], 'noresize', $media['file'].$media['ext']);
+		$src = $this->PHMedia->getUrl($media['object_type'], $media['id'], '284x', $media['file'].$media['ext'].'.png');
+		$orig = $this->PHMedia->getUrl($media['object_type'], $media['id'], 'noresize', $media['file'].$media['ext'].'.png');
 ?>
 										<li class="main_news_li">
 											<div class="main_col_img"><a href="<?=$orig?>" rel="photoalobum"><img alt="<?=$aArticle['Article']['title']?>" src="<?=$src?>" /></a></div>

@@ -6,7 +6,7 @@ function processPath($aPath, $callbackProcessFn, $recursive = false, $aParams = 
 		}
 	}
 	if ($recursive && isset($aPath['folders'])) {
-		foreach($aPath['folders'] as $folder) {	
+		foreach($aPath['folders'] as $folder) {
 			processPath(getPathContent($aPath['path'].$folder.'/'), $callbackProcessFn, true, $aParams);
 		}
 	}
