@@ -55,7 +55,7 @@ class RouterController extends MediaAppController {
 					$lRestoreSize = true;
 				}
 			} elseif ($image->getSizeX() > 400) {
-				$logo->load('./img/logo_big.gif');
+				$logo->load('./img/logo.gif');
 			}
 			$x = round(($image->getSizeX()) / 2, 0) - round($logo->getSizeX() / 2, 0);
 			$y = round(($image->getSizeY()) / 2, 0) - round($logo->getSizeY() / 2, 0);
