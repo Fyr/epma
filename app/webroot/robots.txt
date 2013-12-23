@@ -3,5 +3,5 @@ Disallow: /admin/
 Disallow: /css/
 Disallow: /js/
 Disallow: /files/
-Sitemap: http://agromotors.by/sitemap.xml
-Host: agromotors.by
+Sitemap: http://europnevma.by/sitemap.xml
+Host: europnevma.by
