@@ -411,3 +411,9 @@ msgstr "Курс USD (цена * курс)"
 
 msgid "PU_DIV"
 msgstr "Разделитель разрядов для цен"
+
+msgid "Phone"
+msgstr "Тел."
+
+msgid "Address"
+msgstr "Адрес"

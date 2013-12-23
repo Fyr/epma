@@ -383,6 +383,13 @@ class AdminController extends AppController {
 			array('caption' => __('PU_DIV', true), 'field' => 'Settings.PU_DIV', 'value' => PU_DIV)
 		);
 		$this->set('data', $data);
+
+		$data2 = array(
+			array('caption' => __('Phone', true), 'field' => 'Settings.PHONE', 'value' => PHONE),
+			array('caption' => __('Phone', true).' 2', 'field' => 'Settings.PHONE2', 'value' => PHONE2),
+			array('caption' => __('Address', true), 'field' => 'Settings.ADDRESS', 'value' => ADDRESS)
+		);
+		$this->set('data2', $data2);
 	}
 
 	function utils() {

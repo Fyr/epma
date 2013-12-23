@@ -15,6 +15,16 @@
 ?>
 </table>
 <br/>
+<fieldset>
+<legend>Адреса, телефоны</legend>
+<table class="pad5" cellpadding="0" cellspacing="0">
+<?
+	foreach($data2 as $input) {
+		echo $this->element('std_input', array_merge(array('plugin' => 'core'), $input));
+	}
+?>
+</table>
+</fieldset>
 
 <div align="center">
 		<br/>

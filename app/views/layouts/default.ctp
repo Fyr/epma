@@ -23,7 +23,7 @@ var domain = '.<?=DOMAIN_NAME?>';
 		<div id="page_in">
 		    <header id="header" class="clearfix">
 				<a href="/" class="head_logo"><img src="/img/head_logo.png" alt=""></a>
-				<address class="head_address"><span class="head_phone">8 (029) 603-44-99</span><span class="head_street">г. Минск, ул.Кульман 15</span></address>
+				<address class="head_address"><span class="head_phone"><?=PHONE?></span><span class="head_street"><?=ADDRESS?></span></address>
 				<?=$this->element('main_menu')?>
 			</header>
 
@@ -73,8 +73,8 @@ var domain = '.<?=DOMAIN_NAME?>';
 			<div class="footer_left">
 				<a href="/" class="footer_logo"></a>
 				<div class="footer_address">
-					<address class="footer_phone"> 8 (029) 603-44-99</address>
-					<div class="footer_street">г. Минск, ул.Кульман 15</div>
+					<address class="footer_phone"><?=PHONE?></address>
+					<div class="footer_street"><?=ADDRESS?></div>
 				</div>
 			</div>
 			<div class="footer_right">
