@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="language" content="ru" />
+    <meta name="google-site-verification" content="nKQPn6djtHwzx3Bpau1pb5fxoW-iGT8wv4pTfmTjznU" />
+    <meta name='yandex-verification' content='4518b420f9318c7d' />
 	<title><?=$pageTitle?></title>
 	<?=$this->element('seo_info', array('plugin' => 'seo', 'data' => $this->PHA->read($this->data, 'SEO')))?>
 	<?=$this->Html->css(array('sprites', 'normalize', 'main', 'extra'))?>
@@ -81,6 +83,38 @@ var domain = '.<?=DOMAIN_NAME?>';
 				<?=$this->element('bottom_links')?>
 				<div class="cpr" style="font-size: 11px">Разработка сайта: <a href="mailto:fyr@tut.by">fyr@tut.by</a></div>
 			</div>
+<?
+	if (!TEST_ENV) {
+?>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter23515516 = new Ya.Metrika({id:23515516,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/23515516" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<?
+	}
+?>
 		</div>
 	</footer>
 </body>
