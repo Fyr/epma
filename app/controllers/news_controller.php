@@ -1,6 +1,6 @@
 <?
 class NewsController extends SiteController {
-	const PER_PAGE = 2;
+	const PER_PAGE = 8;
 
 	// var $name = 'news';
 	var $components = array('articles.PCArticle', 'grid.PCGrid');

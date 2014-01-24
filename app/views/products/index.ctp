@@ -43,11 +43,18 @@
 ?>
 									</ul>
 <?
-	if (isset($directSearch) && $directSearch) {
-		echo $this->element('pagination2', array('filterURL' => $aFilters['url']));
-	} else {
-		echo $this->element('pagination', array('objectType' => 'products'));
-	}
+		if (isset($directSearch) && $directSearch) {
+			echo $this->element('pagination2', array('filterURL' => $aFilters['url']));
+		} else {
+			echo $this->element('pagination', array('objectType' => 'products'));
+		}
+		if (isset($relatedContent) && $relatedContent) {
+?>
+		<div class="text" style="margin-top: 30px;">
+			<?=$this->HtmlArticle->fulltext($relatedContent['Article']['body'])?>
+		</div>
+<?
+		}
 ?>
 								</div>
 							</div>
@@ -55,4 +62,3 @@
 
 <?
 	}
-?>
