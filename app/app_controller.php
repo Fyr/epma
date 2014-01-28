@@ -160,7 +160,16 @@ class AppController extends Controller {
 		'brands' => array('href' => '/brand/', 'title' => 'Бренды'),
 		'about' => array('href' => '/pages/show/about-us.html', 'title' => 'О нас'),
 		'partner' => array('href' => '/pages/show/dealers.html', 'title' => 'Дилеры'),
-		'contacts' => array('href' => '/contacts/', 'title' => 'Контакты')
+		'contacts' => array('href' => '/contacts/', 'title' => 'Контакты'),
+		'pnevmo' => array('href' => '/pages/show/pnevmo.html', 'title' => 'Пневмо'),
+		'pnevmoballon' => array('href' => '/pages/show/pnevmoballon.html', 'title' => 'Пневмобаллон'),
+	);
+	var $aSeoLinks = array(
+		'pnevmostojki' => array('href' => '/pages/show/pnevmostojki.html', 'title' => 'Пневмостойки'),
+		'pnevmoballon-zadnij' => array('href' => '/pages/show/pnevmoballon-zadnij.html', 'title' => 'Пневмобаллон задний'),
+		'pnevmoballony-v-pruzhiny' => array('href' => '/pages/show/pnevmoballony-v-pruzhiny.html', 'title' => 'Пневмобаллоны в пружины'),
+		'pnevmopodveska' => array('href' => '/pages/show/pnevmopodveska.html', 'title' => 'Пневмоподвеска'),
+		'pnevmopodushki' => array('href' => '/pages/show/pnevmopodushki.html', 'title' => 'Пневмоподушки')
 	);
 	var $aBreadCrumbs = array();
 
@@ -173,6 +182,7 @@ class AppController extends Controller {
 		$this->set('currMenu', $this->currMenu);
 
 		$this->set('aBottomLinks', $this->aBottomLinks);
+		$this->set('aSeoLinks', $this->aSeoLinks);
 		$this->set('currLink', $this->currLink);
 
 		$this->set('homePage', $this->homePage);

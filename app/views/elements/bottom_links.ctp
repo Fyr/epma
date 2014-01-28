@@ -1,8 +1,6 @@
-				<div class="footer_navi">
 					<ul class="footer_navi_ul">
 <?
-
-	foreach($aBottomLinks as $id => $item) {
+	foreach($aLinks as $id => $item) {
 		$style = ($id == $currLink) ? ' style="font-weight: bold"' : '';
 		$class = ($id == $currLink) ? ' class="current"' : '';
 ?>
@@ -11,4 +9,4 @@
 	}
 ?>
 					</ul>
-				</div>
+
