@@ -88,6 +88,7 @@
 }
 .text {
 	margin-bottom: 20px;
+	text-align: justify;
 }
 input.cart-qty {
 	width: 30px;
@@ -97,4 +98,7 @@ input.cart-qty {
 }
 .floatR {
 	float: right;
+}
+.short_article_t {
+	text-align: justify;
 }

@@ -160,9 +160,9 @@ class AppController extends Controller {
 		'brands' => array('href' => '/brand/', 'title' => 'Бренды'),
 		'about' => array('href' => '/pages/show/about-us.html', 'title' => 'О нас'),
 		'partner' => array('href' => '/pages/show/dealers.html', 'title' => 'Дилеры'),
-		'contacts' => array('href' => '/contacts/', 'title' => 'Контакты'),
+		'contacts' => array('href' => '/contacts/', 'title' => 'Контакты') /*,
 		'pnevmo' => array('href' => '/pages/show/pnevmo.html', 'title' => 'Пневмо'),
-		'pnevmoballon' => array('href' => '/pages/show/pnevmoballon.html', 'title' => 'Пневмобаллон'),
+		'pnevmoballon' => array('href' => '/pages/show/pnevmoballon.html', 'title' => 'Пневмобаллон'),*/
 	);
 	var $aSeoLinks = array(
 		'pnevmostojki' => array('href' => '/pages/show/pnevmostojki.html', 'title' => 'Пневмостойки'),

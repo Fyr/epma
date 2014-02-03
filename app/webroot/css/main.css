@@ -324,7 +324,7 @@ background-size: contain;}
 .footer_phone{font-style: normal;}
 .footer_street{}
 .footer_right{float: right;padding-top: 15px;font-size: 12px;color: #fff;}
-.footer_navi{margin-bottom: 35px; width: 700px;}
+.footer_navi{margin-bottom: 35px; width: 700px;text-align: right;}
 .footer_navi_ul{padding: 0;margin: 0;list-style-type: none;}
 .footer_navi_ul li{display: inline-block;position: relative;margin-left: 24px;}
 .footer_navi_ul li a{text-decoration: none;color: #fff;}

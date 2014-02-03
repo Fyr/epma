@@ -82,9 +82,8 @@ var domain = '.<?=DOMAIN_NAME?>';
 			<div class="footer_right">
 				<div class="footer_navi">
 					<?=$this->element('bottom_links', array('aLinks' => $aBottomLinks, 'currLink' => $currLink))?>
-					<?=$this->element('bottom_links', array('aLinks' => $aSeoLinks, 'currLink' => $currLink))?>
 				</div>
-				<div class="cpr" style="font-size: 11px">Разработка сайта: <a href="mailto:fyr@tut.by">fyr@tut.by</a></div>
+				
 			</div>
 <?
 	if (!TEST_ENV) {

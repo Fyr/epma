@@ -1,5 +1,8 @@
 <IfModule mod_rewrite.c>
    RewriteEngine on
+   RewriteCond %{HTTP_HOST} ^www\.europnevma\.by$ [NC]
+   RewriteRule ^(.*)$ http://europnevma.by/$1 [R=301,L]
+   
    RewriteRule    ^$ app/webroot/    [L]
    RewriteRule    (.*) app/webroot/$1 [L]
 </IfModule>

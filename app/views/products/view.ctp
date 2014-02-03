@@ -32,7 +32,9 @@ $(document).ready(function(){
 		}
 ?>
 									</ul>
+<div class="text">
 <?=$this->HtmlArticle->fulltext($aArticle['Article']['body'])?>
+</div>
 <?
 	if ($aParamValues) {
 ?>
