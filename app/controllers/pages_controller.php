@@ -12,7 +12,7 @@ class PagesController extends SiteController {
 		$aNews = $this->Article->find('all', array(
 			'conditions' => $conditions,
 			'order' => array('Article.featured DESC', 'Article.created DESC'),
-			'limit' => 2
+			'limit' => 4
 		));
 		$this->set('aNews', $aNews);
 

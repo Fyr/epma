@@ -4,7 +4,7 @@
 									<ul class="main_news_list">
 <?
 		foreach($aArticles as $article) {
-			$this->ArticleVars->init($article, $url, $title, $teaser, $src, '284x');
+			$this->ArticleVars->init($article, $url, $title, $teaser, $src, '284x150');
 ?>
 										<li class="main_news_li">
 <?
