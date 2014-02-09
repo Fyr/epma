@@ -172,8 +172,7 @@ class ProductsController extends SiteController {
 						));
 						$aID = ($aRows) ? array_keys($aRows) : $aID;
 					}
-					$aConditions[] = '(Article.title LIKE "%'.$value.'%" OR Article.id IN ('.implode($aID).'))';
-
+					$aConditions[] = '(Article.title LIKE "%'.$value.'%" OR Article.id IN ('.implode(',', $aID).'))';
 				} elseif ($key == 'Tag.id') {
 					$aRows = $this->TagObject->find('list', array('fields' => array('TagObject.object_id', 'TagObject.object_type'), 'conditions' => array('TagObject.tag_id' => $value)));
 					$aConditions['Article.id'] = array_keys($aRows);
