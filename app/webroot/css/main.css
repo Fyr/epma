@@ -333,6 +333,7 @@ background-size: contain;}
 .footer_navi_ul li:before{content: '/';display: block;position: absolute;left: -15px;top: 0;}
 .footer_navi_ul li:first-child:before{display: none;}
 .cpr{text-align: right;}
+#liCounter {float: right;}
 
 
 
