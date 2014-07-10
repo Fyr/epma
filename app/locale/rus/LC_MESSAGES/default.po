@@ -417,3 +417,12 @@ msgstr "Тел."
 
 msgid "Address"
 msgstr "Адрес"
+
+msgid "Tagcloud"
+msgstr "Облако тэгов"
+
+msgid "Url"
+msgstr "URL"
+
+msgid "Size"
+msgstr "Размер"

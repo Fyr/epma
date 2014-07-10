@@ -5,7 +5,7 @@ class AdminController extends AppController {
 	var $components = array('Auth', 'articles.PCArticle', 'grid.PCGrid', 'params.PCParam');
 	var $helpers = array('Text', 'Session', 'core.PHFcke', 'core.PHCore', 'core.PHA', 'grid.PHGrid');
 
-	var $uses = array('articles.Article', 'media.Media', 'category.Category', 'tags.Tag', 'tags.TagObject', 'Brand', 'SiteArticle', 'SiteProduct', 'params.Param', 'params.ParamObject', 'params.ParamValue', 'Brand', 'SiteCategory');
+	var $uses = array('articles.Article', 'media.Media', 'category.Category', 'tags.Tag', 'tags.TagObject', 'Brand', 'SiteArticle', 'SiteProduct', 'params.Param', 'params.ParamObject', 'params.ParamValue', 'Brand', 'SiteCategory', 'TagcloudLink');
 	// var $helpers = array('Html'); // 'Form', 'Fck', 'Ia'
 
 	var $aMenu = array(
@@ -21,7 +21,8 @@ class AdminController extends AppController {
 		'Categories' => '/admin/tagsList/',
 		'Tech.parameters' => '/admin/paramsList/',
 		'Brands' => '/admin/brandList',
-		'Settings' => '/admin/settings'
+		'Settings' => '/admin/settings',
+		'tagcloud' => '/admin/tagcloud/'
 	);
 	var $currMenu = '';
 
@@ -184,6 +185,13 @@ class AdminController extends AppController {
 			);
 			$this->Stat->setItem('Article', $id, 'photos', ($row && $row[0]['media_count']) ? $row[0]['media_count'] : 0);
 		}
+	}
+	
+	function tagcloud() {
+		$this->grid['TagcloudLink'] = array(
+			'order' => array('size' => 'desc')
+		);
+		$this->PCGrid->paginate('TagcloudLink');
 	}
 
 	function typesList($parentID = null) {
